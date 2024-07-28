@@ -1,11 +1,8 @@
 import classes from "./Hero.module.css";
 import Header from "../header/Header";
 import kamil from "../../assets/Kamil_3.png";
-import { socialIcons } from "../../data/social";
 
 function Hero() {
-  const { facebook, linkedin, x, whatsapp } = socialIcons;
-
   return (
     <section>
       <Header />
@@ -22,10 +19,10 @@ function Hero() {
           <div className={classes["social-icons"]}>
             <span className={classes.span} />
             <ul>
-              <li>{linkedin}</li>
+              {/* <li>{linkedin}</li>
               <li>{x}</li>
               <li>{facebook}</li>
-              <li>{whatsapp}</li>
+              <li>{whatsapp}</li> */}
             </ul>
           </div>
         </div>
