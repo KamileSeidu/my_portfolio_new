@@ -1,12 +1,10 @@
 import "./App.css";
-import About from "./components/about/About";
-// import Skills from "./components/skills/Skills";
+import Projects from "../src/components/projects/Projects";
 
 function App() {
   return (
     <>
-      {/* <Skills /> */}
-      <About />
+      <Projects />
     </>
   );
 }
