@@ -8,7 +8,7 @@ function Header() {
     setIsToggle(!isToggle);
   };
 
-  const [isToggle, setIsToggle] = useState(null);
+  const [isToggle, setIsToggle] = useState(false);
 
   return (
     <nav>
