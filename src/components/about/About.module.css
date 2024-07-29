@@ -1,0 +1,51 @@
+.about-section {
+  background-color: #31333b;
+}
+
+.heading {
+  margin: 0;
+  font-weight: 400;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.heading,
+.about-paragraph {
+  color: white;
+}
+
+.span {
+  display: inline-block;
+  width: 150px;
+  height: 2px;
+  background-color: #ffd871;
+}
+
+.about-paragraph {
+  font-size: 1.4rem;
+}
+
+.about-paragraph p {
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .about-paragraph p {
+    text-align: left;
+  }
+
+  .about-paragraph {
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-paragraph .span {
+    flex-basis: 150px;
+  }
+}

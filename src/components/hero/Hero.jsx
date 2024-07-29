@@ -5,7 +5,7 @@ import { socialIcons } from "../../data/social";
 
 function Hero() {
   return (
-    <section>
+    <section className={classes["hero-section"]}>
       <Header />
       <div className={classes.hero}>
         <div className={classes["hero__heading"]}>

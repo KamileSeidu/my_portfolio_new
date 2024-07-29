@@ -1,0 +1,24 @@
+.skills {
+  margin-top: 50px;
+}
+
+.skills h1 {
+  /* margin: 0; */
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
