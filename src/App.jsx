@@ -1,10 +1,10 @@
 import "./App.css";
-import Projects from "../src/components/projects/Projects";
+import Experience from "./components/experience/Experience";
 
 function App() {
   return (
     <>
-      <Projects />
+      <Experience />
     </>
   );
 }
