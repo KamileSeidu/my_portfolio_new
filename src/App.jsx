@@ -1,10 +1,13 @@
 import "./App.css";
-import Testimonial from "./components/testimonial/Testimonial";
+// import SocialIcons from "./components/contact/social-icons/social-icons";
+import Contact from "./components/contact/Contact";
+// import Testimonial from "./components/testimonial/Testimonial";
 
 function App() {
   return (
     <>
-      <Testimonial />
+      {/* <SocialIcons /> */}
+      <Contact />
     </>
   );
 }
