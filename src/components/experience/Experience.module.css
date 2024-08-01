@@ -1,6 +1,7 @@
 .experience-section {
   background-color: #3d3e42;
   color: white;
+  padding-top: 5rem;
 }
 
 .experience-card {
@@ -80,7 +81,7 @@
 @media screen and (max-width: 1024px) {
   .experience-section h1 {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
   }
 

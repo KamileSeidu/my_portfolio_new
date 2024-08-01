@@ -9,9 +9,13 @@
 
 .contact-header h1 {
   margin: 0;
+  position: absolute;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .top-left-line,
@@ -43,6 +47,10 @@
   bottom: -2px;
 }
 
+.contact-details {
+  padding-top: 3rem;
+}
+
 .contact-details p {
   margin-top: 0;
   font-size: 2rem;
@@ -70,20 +78,20 @@
   gap: 10px;
   justify-content: center;
   position: relative;
-  bottom: -15px;
+  bottom: -18px;
 }
 
 @media screen and (min-width: 1024px) {
   .contact-header h1 {
     font-size: 6rem;
     position: absolute;
-    top: -40px;
+    top: -47px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .contact-details {
-    padding-top: 50px;
+    padding-top: 80px;
     display: grid;
     grid-template-areas:
       "first second"
@@ -118,6 +126,6 @@
 
   .contact-icons ul {
     gap: 35px;
-    bottom: -20px;
+    bottom: -25px;
   }
 }

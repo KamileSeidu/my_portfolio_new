@@ -4,7 +4,6 @@ import SocialIcons from "./social-icons/social-icons";
 import { contactIcons } from "../../data/contact";
 
 function Contact() {
-  console.log(ICONS);
   const socials = ICONS.map((data, index) => (
     <SocialIcons key={index} icon={data.icon} />
   ));
@@ -17,15 +16,15 @@ function Contact() {
         <span className={classes["top-right-line"]} />
       </div>
       <div className={classes["contact-details"]}>
-        <p>
+        <p className={classes.email}>
           <img src={contactIcons.email} alt="" />
           seidukamile@gmail.com
         </p>
-        <p>
+        <p className={classes.phone}>
           <img src={contactIcons.phone} alt="" />
           +233 557 148 772
         </p>
-        <p>
+        <p className={classes.location}>
           <img src={contactIcons.location} alt="" />
           Accra, Ghana
         </p>

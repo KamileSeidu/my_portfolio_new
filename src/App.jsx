@@ -1,13 +1,24 @@
 import "./App.css";
-// import SocialIcons from "./components/contact/social-icons/social-icons";
+import Hero from "../src/components/hero/Hero";
+import About from "../src/components/about/About";
+import Projects from "./components/projects/Projects";
+import Testimonial from "./components/testimonial/Testimonial";
 import Contact from "./components/contact/Contact";
-// import Testimonial from "./components/testimonial/Testimonial";
+import Experience from "./components/experience/Experience";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <>
-      {/* <SocialIcons /> */}
-      <Contact />
+      <section>
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </section>
     </>
   );
 }
