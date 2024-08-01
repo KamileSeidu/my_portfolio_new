@@ -72,3 +72,52 @@
   position: relative;
   bottom: -15px;
 }
+
+@media screen and (min-width: 1024px) {
+  .contact-header h1 {
+    font-size: 6rem;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-details {
+    padding-top: 50px;
+    display: grid;
+    grid-template-areas:
+      "first second"
+      "third third";
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  .contact-details p {
+    width: 400px;
+  }
+
+  .email {
+    grid-area: first;
+  }
+
+  .phone {
+    grid-area: second;
+  }
+
+  .location {
+    grid-area: third;
+  }
+
+  .top-left-line,
+  .top-right-line,
+  .bottom-left-line,
+  .bottom-right-line {
+    width: 30%;
+    height: 4px;
+  }
+
+  .contact-icons ul {
+    gap: 35px;
+    bottom: -20px;
+  }
+}
