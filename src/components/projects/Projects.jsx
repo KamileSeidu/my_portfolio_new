@@ -24,22 +24,24 @@ export default function Projects() {
 
   return (
     <div className={classes.projects}>
-      <h1>My Projects</h1>
-      <div className={`${classes["tab-button"]}`}>
-        <TabButton
-          isSelected={selected === "react"}
-          onSelect={() => handleSelect("react")}
-        >
-          React JS
-        </TabButton>
-        <TabButton
-          isSelected={selected === "wordpress"}
-          onSelect={() => handleSelect("wordpress")}
-        >
-          Wordpress
-        </TabButton>
+      <div className={classes.container}>
+        <h1>My Projects</h1>
+        <div className={`${classes["tab-button"]}`}>
+          <TabButton
+            isSelected={selected === "react"}
+            onSelect={() => handleSelect("react")}
+          >
+            React JS
+          </TabButton>
+          <TabButton
+            isSelected={selected === "wordpress"}
+            onSelect={() => handleSelect("wordpress")}
+          >
+            Wordpress
+          </TabButton>
+        </div>
+        <main>{selectedTabProjects}</main>
       </div>
-      <main>{selectedTabProjects}</main>
     </div>
   );
 }

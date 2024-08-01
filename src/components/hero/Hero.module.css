@@ -91,6 +91,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
   .hero {
     display: flex;
     flex-direction: row;
@@ -98,7 +103,7 @@
   .hero__heading {
     align-self: center;
     text-align: start;
-    flex-basis: 700px;
+    flex-basis: 900px;
   }
 
   .hero__heading h1 {
@@ -114,7 +119,9 @@
   }
 
   .img {
-    height: 900px;
+    height: 700px;
+    align-self: center;
+    justify-self: center;
   }
 
   .span {

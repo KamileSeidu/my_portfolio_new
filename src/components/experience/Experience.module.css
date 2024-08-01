@@ -4,6 +4,11 @@
   padding-top: 5rem;
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .experience-card {
   display: flex;
   gap: 20px;
@@ -63,9 +68,9 @@
 }
 
 .experience-info h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 .experience-info h3 {
   font-size: 3rem;
@@ -85,7 +90,16 @@
     text-align: center;
   }
 
+  .experience-info h2 {
+    font-size: 4rem;
+  }
+
   .span-line {
     height: 420px;
+  }
+
+  .container {
+    width: auto;
+    margin: 0;
   }
 }

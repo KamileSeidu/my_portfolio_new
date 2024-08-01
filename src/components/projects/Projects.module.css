@@ -26,6 +26,11 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

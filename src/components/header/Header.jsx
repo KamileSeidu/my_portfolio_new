@@ -11,31 +11,33 @@ function Header() {
   const [isToggle, setIsToggle] = useState(false);
 
   return (
-    <nav>
-      <img src={logo} alt="logo" className={classes.img} />
-      <img
-        src={menu}
-        alt="menu icon"
-        className={classes.menu}
-        onClick={toggleMenu}
-      />
-      <ul className={`${classes["nav-list"]} ${isToggle && classes.open}`}>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Portfolio</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-        <li>
-          <a href="" className={classes.btn}>
-            Download CV
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <section className={classes.header}>
+      <nav>
+        <img src={logo} alt="logo" className={classes.img} />
+        <img
+          src={menu}
+          alt="menu icon"
+          className={classes.menu}
+          onClick={toggleMenu}
+        />
+        <ul className={`${classes["nav-list"]} ${isToggle && classes.open}`}>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="" className={classes.btn}>
+              Download CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
   );
 }
 

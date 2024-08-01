@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section className={classes["hero-section"]}>
       <Header />
-      <div className={classes.hero}>
+      <div className={`${classes.hero} ${classes.container}`}>
         <div className={classes["hero__heading"]}>
           <h1>
             I'm <span>Kamile Seidu</span>

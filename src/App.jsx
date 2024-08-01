@@ -1,4 +1,4 @@
-import "./App.css";
+import classes from "./App.module.css";
 import Hero from "../src/components/hero/Hero";
 import About from "../src/components/about/About";
 import Projects from "./components/projects/Projects";
@@ -10,7 +10,7 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <section>
+      <section className={classes.container}>
         <Hero />
         <About />
         <Projects />

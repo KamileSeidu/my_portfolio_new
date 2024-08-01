@@ -81,6 +81,13 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+  }
+
   .testimonial {
     flex-direction: row;
     padding: 13rem 0;
@@ -124,12 +131,14 @@
     background-color: #ffc86b;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    left: 0;
+    top: 0;
   }
 
   .testimonial-image img {
     position: absolute;
     width: 600px;
     height: auto;
-    bottom: -0.5rem;
+    bottom: 0.4rem;
   }
 }
