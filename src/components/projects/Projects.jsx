@@ -14,12 +14,7 @@ export default function Projects() {
   const selectedProject = PROJECTS[selected];
 
   const selectedTabProjects = selectedProject.map((project) => (
-    <ProjectCard
-      key={project.title}
-      title={project.title}
-      image={project.img}
-      description={project.description}
-    />
+    <ProjectCard key={project.title} {...project} />
   ));
 
   return (

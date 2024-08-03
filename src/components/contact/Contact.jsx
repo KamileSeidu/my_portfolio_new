@@ -5,7 +5,7 @@ import { contactIcons } from "../../data/contact";
 
 function Contact() {
   const socials = ICONS.map((data, index) => (
-    <SocialIcons key={index} icon={data.icon} />
+    <SocialIcons key={index} {...data} />
   ));
 
   return (

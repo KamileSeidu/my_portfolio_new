@@ -1,6 +1,7 @@
 import classes from "./Hero.module.css";
 import Header from "../header/Header";
 import kamil from "../../assets/Kamil_3.png";
+import kamile from "../../assets/Kamil_4.png";
 import { socialIcons } from "../../data/social";
 
 function Hero() {
@@ -21,7 +22,12 @@ function Hero() {
           </a>
         </div>
         <div className={classes["hero__image"]}>
-          <img src={kamil} alt="" className={classes.img} />
+          <img
+            src={kamil}
+            srcSet={`${kamile} 300w, ${kamil} 800w`}
+            alt=""
+            className={classes.img}
+          />
           <div className={classes["social-icons"]}>
             <span className={classes.span} />
             <ul>

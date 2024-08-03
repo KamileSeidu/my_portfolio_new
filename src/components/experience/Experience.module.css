@@ -12,6 +12,7 @@
 .experience-card {
   display: flex;
   gap: 20px;
+  padding-bottom: 1.5rem;
 }
 
 .experience-card__design {
@@ -68,7 +69,7 @@
 }
 
 .experience-info h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 0;
   font-weight: 600;
 }
@@ -78,9 +79,14 @@
   margin-bottom: 2rem;
   opacity: 0.8;
 }
-.experience-info p {
+.experience-info ul {
   font-size: 2rem;
   font-weight: 300;
+  list-style: none;
+}
+
+.experience-info ul li {
+  padding-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -92,6 +98,10 @@
 
   .experience-info h2 {
     font-size: 4rem;
+  }
+
+  .experience-info ul {
+    padding-right: 1rem;
   }
 
   .span-line {

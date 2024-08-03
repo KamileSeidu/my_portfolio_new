@@ -31,7 +31,13 @@ function Header() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="" className={classes.btn}>
+            <a
+              href="https://drive.google.com/file/d/1qzbFWIpiuhMQBQ3bU0Q8pfQ8L34Y-9vJ/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className={classes.btn}
+            >
               Download CV
             </a>
           </li>

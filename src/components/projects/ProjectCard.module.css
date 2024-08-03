@@ -4,10 +4,33 @@
   text-align: center;
 }
 
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
 .card {
+  position: relative;
   border-radius: 15px;
   background-color: #3d3e42;
   padding: 1.5rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover .hover-text {
+  display: block;
+}
+
+.hover-text {
+  font-size: 2rem;
+  color: white;
+  background-color: #fd6f00;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  display: none;
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card h2 {
