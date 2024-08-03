@@ -12,8 +12,13 @@ function Hero() {
           <h1>
             I'm <span>Kamile Seidu</span>
           </h1>
-          <p>Frontend Web Developer & AI Enthusiast</p>
-          <button className={classes.btn}>Hire Me</button>
+          <p>
+            Frontend Engineer & <br />
+            AI Enthusiast
+          </p>
+          <a href="#contact" className={classes.btn}>
+            Hire Me
+          </a>
         </div>
         <div className={classes["hero__image"]}>
           <img src={kamil} alt="" className={classes.img} />
@@ -21,22 +26,38 @@ function Hero() {
             <span className={classes.span} />
             <ul>
               <li>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/in/seidu-kamile-19462a2b5/?originalSubdomain=gh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={socialIcons.linkedin} alt="" />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a
+                  href="https://www.facebook.com/kha.mil.777"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={socialIcons.facebook} alt="" />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a
+                  href="https://wa.me/qr/E7FJX26GEPAFM1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={socialIcons.whatsapp} alt="" />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a
+                  href="https://x.com/KamileSeidu?t=lRC8PcJKsFGNEMnkFihb2w&s=35"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={socialIcons.x} alt="" />
                 </a>
               </li>

@@ -23,7 +23,7 @@ export default function Projects() {
   ));
 
   return (
-    <div className={classes.projects}>
+    <div id="projects" className={classes.projects}>
       <div className={classes.container}>
         <h1>My Projects</h1>
         <div className={`${classes["tab-button"]}`}>

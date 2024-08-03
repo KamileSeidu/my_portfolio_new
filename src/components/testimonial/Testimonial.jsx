@@ -11,10 +11,17 @@ function Testimonial() {
             <span className={classes["long-line"]} />
             <div className={classes["paragraph-design__text"]}>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
-                ratione reiciendis quia dolorem ad, facilis, animi consequatur
-                dolores sequi numquam eos accusamus ab explicabo maxime
-                voluptate magnam nam harum nihil?
+                I had the pleasure of working with Kamile Seidu on developing a
+                pixel-perfect website for my Foundation, and I couldn't be more
+                impressed with the results. Kamile demonstrated an exceptional
+                skill and attention to detail throughout the process. From the
+                initial consultation to the final delivery, Kamile was
+                professional, responsive, and committed to ensuring that every
+                aspect of the website met the highest standards. What truly
+                stood out was Kamile’s ability to deliver the project on time
+                without compromising on quality. I highly recommend Kamile to
+                anyone seeking a talented frontend engineer who can turn complex
+                requirements into beautifully crafted digital experiences.
               </p>
               <h2>Abubakari Mohammed Salis</h2>
               <div className={classes["title"]}>

@@ -9,7 +9,7 @@ function Contact() {
   ));
 
   return (
-    <section className={classes.contact}>
+    <section id="contact" className={classes.contact}>
       <div className={classes["contact-header"]}>
         <span className={classes["top-left-line"]} />
         <h1>Contact Me</h1>

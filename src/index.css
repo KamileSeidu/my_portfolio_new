@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: #ffd871;
+}
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 :root {
