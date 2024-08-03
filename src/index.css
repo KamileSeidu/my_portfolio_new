@@ -8,9 +8,11 @@
   color: #ffd871;
 }
 
+body,
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  /* background-color: #34353a; */
 }
 
 :root {
