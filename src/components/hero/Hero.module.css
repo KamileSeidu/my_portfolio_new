@@ -125,13 +125,13 @@
   }
 
   .social-icons {
-    right: 18rem;
+    right: 3.5rem;
     bottom: -1rem;
   }
 
   .img {
-    height: 650px;
-    width: auto;
+    height: 800px;
+    width: 100%;
     align-self: center;
     justify-self: center;
   }
