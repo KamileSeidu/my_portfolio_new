@@ -126,7 +126,7 @@
       width: 0;
     }
     to {
-      width: 19ch; /* Adjust this to the length of your text */
+      width: 20ch; /* Adjust this to the length of your text */
     }
   }
 
