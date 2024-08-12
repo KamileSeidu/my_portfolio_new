@@ -13,7 +13,7 @@ function About() {
             specialize in crafting seamless, pixel-perfect user interfaces. My
             expertise spans across JavaScript, ReactJS, NextJS, React Native,
             HTML5, CSS3, and Git, enabling me to deliver high-quality,
-            responsive web applications that enhance user experience.My
+            responsive web applications that enhance user experience. My
             professional journey has been marked by a commitment to excellence
             and continuous learning. During my time as an intern at Nonihub, I
             was honored with the Outstanding Intern Award, a testament to my

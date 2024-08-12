@@ -112,6 +112,36 @@
     /* flex-basis: 900px; */
   }
 
+  /* Type writer effect */
+  .type {
+    overflow: hidden; /* Ensures that the text doesn't overflow */
+    white-space: nowrap; /* Prevents text wrapping */
+    border-right: solid 3px #ffc86b; /* Creates the cursor effect */
+    animation: type 2s steps(30) 1s forwards, blink 0.75s step-end infinite;
+  }
+
+  /* Keyframes for typing effect */
+  @keyframes type {
+    from {
+      width: 0;
+    }
+    to {
+      width: 19ch; /* Adjust this to the length of your text */
+    }
+  }
+
+  /* Keyframes for blinking cursor */
+  @keyframes blink {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #ffc86b;
+    }
+  }
+  /* Type writer effect */
+
   .hero__heading h1 {
     font-size: 5rem;
   }

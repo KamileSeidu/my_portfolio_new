@@ -10,7 +10,7 @@ function Hero() {
       <Header />
       <div className={`${classes.hero} ${classes.container}`}>
         <div className={classes["hero__heading"]}>
-          <h1>
+          <h1 className={classes.type}>
             I'm <span>Kamile Seidu</span>
           </h1>
           <p>
