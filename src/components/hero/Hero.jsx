@@ -3,6 +3,7 @@ import Header from "../header/Header";
 import kamil from "../../assets/Kamil_3.png";
 import kamile from "../../assets/Kamil_4.png";
 import { socialIcons } from "../../data/social";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -22,10 +23,13 @@ function Hero() {
           </a>
         </div>
         <div className={classes["hero__image"]}>
-          <img
+          <motion.img
             src={kamil}
             srcSet={`${kamile} 300w, ${kamil} 800w`}
             loading="lazy"
+            initial={{ opacity: 0, x: 50 }} // Start faded and shifted down
+            animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+            transition={{ duration: 1, ease: "easeOut" }}
             alt=""
             className={classes.img}
           />
