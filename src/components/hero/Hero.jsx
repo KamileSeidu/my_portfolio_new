@@ -11,7 +11,7 @@ function Hero() {
       <div className={`${classes.hero} ${classes.container}`}>
         <div className={classes["hero__heading"]}>
           <h1 className={classes.type}>
-            I'm <span>Kamile Seidu</span>
+            I&apos;m <span>Kamile Seidu</span>
           </h1>
           <p>
             Frontend Engineer & <br />
@@ -25,6 +25,7 @@ function Hero() {
           <img
             src={kamil}
             srcSet={`${kamile} 300w, ${kamil} 800w`}
+            loading="lazy"
             alt=""
             className={classes.img}
           />
@@ -33,7 +34,7 @@ function Hero() {
             <ul>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/seidu-kamile-19462a2b5/?originalSubdomain=gh"
+                  href="https://www.linkedin.com/in/seidu-kamile/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
