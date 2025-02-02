@@ -14,8 +14,8 @@ function Hero() {
       <Header />
       <div className={`${classes.hero} ${classes.container}`}>
         <motion.div
-          initial={{ opacity: 0, x: -50 }} // Start faded and shifted down
-          animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+          initial={{ opacity: 0, y: 50 }} // Start faded and shifted down
+          animate={{ opacity: 1.8, y: 0 }} // Fade in and move up
           transition={{ duration: 1, ease: "easeOut" }}
           className={classes["hero__heading"]}
         >
@@ -37,8 +37,8 @@ function Hero() {
             srcSet={`${kamile} 300w, ${kamil} 800w`}
             onLoad={() => setIsLoaded(true)}
             loading="lazy"
-            initial={{ opacity: 0, x: 50 }} // Start faded and shifted down
-            animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+            initial={{ opacity: 0, y: -50 }} // Start faded and shifted down
+            animate={{ opacity: 1.8, y: 0 }} // Fade in and move up
             transition={{ duration: 1, ease: "easeOut" }}
             alt=""
             className={classes.img}
@@ -54,8 +54,8 @@ function Hero() {
                 >
                   <motion.img
                     loading="lazy"
-                    initial={{ opacity: 0, x: 50 }} // Start faded and shifted down
-                    animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+                    initial={{ opacity: 0, y: 50 }} // Start faded and shifted down
+                    animate={{ opacity: 1.8, y: 0 }} // Fade in and move up
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     src={socialIcons.linkedin}
                     alt=""
@@ -86,8 +86,8 @@ function Hero() {
                 >
                   <motion.img
                     loading="lazy"
-                    initial={{ opacity: 0, x: 50 }} // Start faded and shifted down
-                    animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+                    initial={{ opacity: 0, y: 50 }} // Start faded and shifted down
+                    animate={{ opacity: 1.8, y: 0 }} // Fade in and move up
                     transition={{ duration: 0.9, ease: "easeOut" }}
                     src={socialIcons.whatsapp}
                     alt=""
