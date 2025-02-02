@@ -18,8 +18,8 @@ function Contact() {
       </motion.div>
       <div className={classes["contact-details"]}>
         <motion.p
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4 }}
           className={classes.email}
         >
@@ -27,7 +27,7 @@ function Contact() {
           seidukamile@gmail.com
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, x: 20 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.6 }}
           className={classes.phone}
@@ -36,8 +36,8 @@ function Contact() {
           +233 557 148 772
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.8 }}
           className={classes.location}
         >
