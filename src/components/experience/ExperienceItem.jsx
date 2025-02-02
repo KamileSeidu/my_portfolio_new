@@ -1,8 +1,14 @@
 import classes from "./Experience.module.css";
+import { motion } from "framer-motion";
 
 function ExperienceItem({ title, company, year, activities }) {
   return (
-    <div className={classes["experience-card"]}>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className={classes["experience-card"]}
+    >
       <div className={classes["experience-card__design"]}>
         <span className={classes["span-badge"]}>{year}</span>
         <div className={classes["span-badge__logo"]}>
@@ -19,7 +25,7 @@ function ExperienceItem({ title, company, year, activities }) {
           <li>{activities.three}</li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

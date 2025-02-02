@@ -2,6 +2,7 @@ import classes from "./Contact.module.css";
 import { ICONS } from "../../data/social";
 import SocialIcons from "./social-icons/social-icons";
 import { contactIcons } from "../../data/contact";
+import { motion } from "framer-motion";
 
 function Contact() {
   const socials = ICONS.map((data, index) => (
@@ -10,24 +11,39 @@ function Contact() {
 
   return (
     <section id="contact" className={classes.contact}>
-      <div className={classes["contact-header"]}>
+      <motion.div className={classes["contact-header"]}>
         <span className={classes["top-left-line"]} />
         <h1>Contact Me</h1>
         <span className={classes["top-right-line"]} />
-      </div>
+      </motion.div>
       <div className={classes["contact-details"]}>
-        <p className={classes.email}>
+        <motion.p
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.4 }}
+          className={classes.email}
+        >
           <img src={contactIcons.email} alt="" />
           seidukamile@gmail.com
-        </p>
-        <p className={classes.phone}>
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.6 }}
+          className={classes.phone}
+        >
           <img src={contactIcons.phone} alt="" />
           +233 557 148 772
-        </p>
-        <p className={classes.location}>
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.8 }}
+          className={classes.location}
+        >
           <img src={contactIcons.location} alt="" />
           Accra, Ghana
-        </p>
+        </motion.p>
       </div>
       <div>
         <div className={classes["contact-icons"]}>

@@ -6,9 +6,42 @@
 .footer h1 {
   color: #ffcc6d;
   margin: 0;
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Hides the overflowing text */
+  border-right: 3px solid #ffcc6d; /* Creates the blinking cursor */
+  white-space: nowrap; /* Prevents text from wrapping */
+  letter-spacing: 2px; /* Optional: Adds spacing between letters */
+  animation: typing 3s steps(60, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-right: 3px solid transparent;
+  }
+  50% {
+    border-right: 3px solid #ffcc6d;
+  }
+
+  100% {
+    border-right: 3px solid transparent;
+  }
 }
 
 @media screen and (min-width: 1024px) {

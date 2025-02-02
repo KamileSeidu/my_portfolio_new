@@ -4,13 +4,21 @@ import kamil from "../../assets/Kamil_3.png";
 import kamile from "../../assets/Kamil_4.png";
 import { socialIcons } from "../../data/social";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function Hero() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <section className={classes["hero-section"]}>
       <Header />
       <div className={`${classes.hero} ${classes.container}`}>
-        <div className={classes["hero__heading"]}>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }} // Start faded and shifted down
+          animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+          transition={{ duration: 1, ease: "easeOut" }}
+          className={classes["hero__heading"]}
+        >
           <h1 className={classes.type}>
             I&apos;m <span>Kamile Seidu</span>
           </h1>
@@ -21,11 +29,13 @@ function Hero() {
           <a href="#contact" className={classes.btn}>
             Hire Me
           </a>
-        </div>
+        </motion.div>
         <div className={classes["hero__image"]}>
+          {!isLoaded && <div className={classes["skeleton-loader"]}></div>}
           <motion.img
             src={kamil}
             srcSet={`${kamile} 300w, ${kamil} 800w`}
+            onLoad={() => setIsLoaded(true)}
             loading="lazy"
             initial={{ opacity: 0, x: 50 }} // Start faded and shifted down
             animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
@@ -42,7 +52,14 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={socialIcons.linkedin} alt="" />
+                  <motion.img
+                    loading="lazy"
+                    initial={{ opacity: 0, x: 50 }} // Start faded and shifted down
+                    animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    src={socialIcons.linkedin}
+                    alt=""
+                  />
                 </a>
               </li>
               <li>
@@ -51,7 +68,14 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={socialIcons.facebook} alt="" />
+                  <motion.img
+                    loading="lazy"
+                    initial={{ opacity: 0, y: 50 }} // Start faded and shifted down
+                    animate={{ opacity: 1.8, y: 0 }} // Fade in and move up
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    src={socialIcons.facebook}
+                    alt=""
+                  />
                 </a>
               </li>
               <li>
@@ -60,7 +84,14 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={socialIcons.whatsapp} alt="" />
+                  <motion.img
+                    loading="lazy"
+                    initial={{ opacity: 0, x: 50 }} // Start faded and shifted down
+                    animate={{ opacity: 1.8, x: 0 }} // Fade in and move up
+                    transition={{ duration: 0.9, ease: "easeOut" }}
+                    src={socialIcons.whatsapp}
+                    alt=""
+                  />
                 </a>
               </li>
               <li>
@@ -69,7 +100,14 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={socialIcons.x} alt="" />
+                  <motion.img
+                    loading="lazy"
+                    initial={{ opacity: 0, y: 50 }} // Start faded and shifted down
+                    animate={{ opacity: 1.8, y: 0 }} // Fade in and move up
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    src={socialIcons.x}
+                    alt=""
+                  />
                 </a>
               </li>
             </ul>
